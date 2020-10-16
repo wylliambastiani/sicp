@@ -5,9 +5,6 @@
 
 
 (define (sqrt n)
-  (define (square guess)
-    (* guess guess))
-
   (define (average x y)
     (/ (+ x y) 2))
 
