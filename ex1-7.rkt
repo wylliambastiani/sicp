@@ -8,11 +8,14 @@
   (define (square guess)
     (* guess guess))
 
+  (define (average x y)
+    (/ (+ x y) 2))
+
   (define (good-enough? guess)
     (= (improve guess) guess))
 
   (define (improve guess)
-    (/ (+ (/ n guess) guess) 2))
+    (average (/ n guess) guess))
 
   (define (compute guess)
     (if (good-enough? guess)
